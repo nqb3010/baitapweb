@@ -29,7 +29,7 @@ border-radius: 4px;
 #menu {
     position: absolute;
     top: 1%;
-    left: 81%;
+    left: 84%;
     transform: translate(-50%, 100%);
 }
 
@@ -51,7 +51,7 @@ border-radius: 4px;
 
 #menu ul li a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     display: block;
     padding: 10px;
    
@@ -80,7 +80,8 @@ border-radius: 4px;
 
 #menu ul ul li a {
     background: #ccc;
-    color: #000;
+    color: #fff;
+    ;
 }
 
 #menu ul ul li a:hover {
@@ -148,12 +149,32 @@ border-radius: 4px;
 #footer ul ul li a:hover {
     background: #fff;
 }
-/* background */
-/* body {
-    background-image: url("https://i.pinimg.com/564x/2c/d8/af/2cd8afc1e2381dfd42f9760d85e215cb.jpg");
+/* background anime from google*/
+body {
+    background-image: url("https://i.pinimg.com/originals/0f/6a/6a/0f6a6a0b6b2b2b0e0e0e0e0e0e0e0e0e.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-} */
+    background-position: center;
+    background-attachment: fixed;
+}
+.btn{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+}
+
+/* background dark */
+body {
+    background-color: #000;
+} 
+
+
+
 
 
 
