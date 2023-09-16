@@ -1,0 +1,163 @@
+#logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#searchform {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+.search {
+ border: 1px solid #ccc;
+ width: 70px;
+ height: 30px;
+ border-radius: 4px;
+}
+.textbox{
+border: 1px solid #ccc;
+width: 400px;
+height: 30px;
+border-radius: 4px;
+
+}
+/* menu */
+#menu {
+    position: absolute;
+    top: 1%;
+    left: 81%;
+    transform: translate(-50%, 100%);
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+ #menu ul li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 10px;
+   
+    transition: all .3s ease;
+}
+
+#menu ul li:hover a {
+    background: #ccc;
+}
+
+#menu ul li:hover ul {
+    display: block;
+}
+
+#menu ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+#menu ul ul li {
+    display: block;
+}
+
+#menu ul ul li a {
+    background: #ccc;
+    color: #000;
+}
+
+#menu ul ul li a:hover {
+    background: #fff;
+} 
+
+/* footer */
+#footer {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+#footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+#footer ul li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 10px;
+    /* background: #fff; */
+    transition: all .3s ease;
+}
+
+#footer ul li:hover a {
+    background: #ccc;
+}
+
+#footer ul li:hover ul {
+    display: block;
+}
+
+#footer ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+#footer ul ul li {
+    display: block;
+}
+
+#footer ul ul li a {
+    background: #ccc;
+    color: #000;
+}
+
+#footer ul ul li a:hover {
+    background: #fff;
+}
+/* background */
+/* body {
+    background-image: url("https://i.pinimg.com/564x/2c/d8/af/2cd8afc1e2381dfd42f9760d85e215cb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+
+
+
+
+
