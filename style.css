@@ -13,7 +13,7 @@
 }
 
 .search {
- border: 1px solid #ccc;
+ border-radius: 5px;
  width: 70px;
  height: 30px;
  border-radius: 4px;
@@ -159,7 +159,7 @@ body {
 }
 .btn{
     background-color: #4CAF50;
-    border: none;
+    border-radius: 5px;
     color: white;
     padding: 10px 20px;
     text-align: center;
