@@ -2,53 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title id="title">Trang chủ</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/5.0.0/css/themify-icons.min.css"/> -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- tạo ảnh -->
-    <img id="logo" src="https://www.google.com.vn/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="google">
-    <!-- tạo form -->
-    <div id="searchform">
-        <form  action="https://www.google.com.vn/search" method="GET">
-            <input class="textbox" type="text" name="q" id="search" placeholder="Search...">
-
-            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
-
-                
+    <div class="dropdown">
+        <button class="dropbtn">
+            <i class="fas fa-home"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="">Trang chủ</a>
+            <a href="#">Quản lý</a>
+            <a onclick="showForm('login-form')" href="#">Tài khoản</a>
+            <a href="#">Đăng xuất</a>
+        </div>
+    </div>
+    <div class="form-action" id="login-form">
+        <h1 class="text-h1">Login</h1>
+        <p class="text-p">Enter your username and password to login</p>
+        <form action="api/login.php" method="POST">
+            <input class="text-user" type="text" name="username" placeholder="Username" required>
+            <input class="text-pass" type="password" name="password" placeholder="Password" required>
+            <input class="checkbox" type="checkbox" name="remember" value="1">
+            <label class="label-remember">Remember me</label>
             
-            
+            <button class="btn" type="submit">Sign in</button>
+                <p class="p-register">Bạn chưa có tài khoản?</p>
+                <a class="a-register" onclick="showForm('register-form')" href="#">Đăng ký</a>
+                <a class="a-forgot-password" onclick="showForm('forgot-form')" href="#">Quên mật khẩu?</a>        
         </form>
-    </div>
-    
-    <!-- tạo menu -->
-    <div id="menu">
-        <ul>
-            <!-- thêm link cho các mục -->
-            <li><a href="#">Gmail</a></li>
-            <li><a href="#">Hình ảnh</a></li>
-            <li><a href="login.html"><i class="fas fa-sign-in-alt"></i></a></li>
-        </ul>
-    </div>
-    <!-- tạo footer -->
-    <div id="footer">
-        <ul>
-            <li><a href="#">Quảng cáo</a></li>
-            <li><a href="#">Kinh doanh</a></li>
-            <li><a href="#">Về</a></li>
-            <li><a href="#">Tin tuyển dụng</a></li>
-            <li><a href="#">Bản quyền</a></li>
-            <li><a href="#">Dành cho doanh nghiệp</a></li>
-            <li><a href="#">Nhà phát triển</a></li>
-            <li><a href="#">Tất cả các dịch vụ</a></li>
-        </ul>
-    </div>
-
-    
+        </div>
+        <div class ="form-action" id="register-form">
+            <h1 class="text-h1">Register</h1>
+            <p class="text-p">Enter your username and password to Register</p>
+            <form  action="api/register.php" method="POST">
+                <input class="text-user" type="text" name="username" placeholder="Username" required>
+                <input class="text-pass" type="password" name="password" placeholder="Password" required>
+                <input class="text-pass" type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <button class="btn" type="submit">Sign up</button>
+            </form>
+            <p class="p-login">Bạn đã có tài khoản?</p>
+            <a class="a-login" onclick="showForm('login-form')" href="#">Đăng nhập</a>
+            </div>
+            <div class="form-action" id="forgot-form">
+                <h1 class="text-h1">Forgot Password</h1>
+                <p class="text-p">Enter your username and email to reset your password</p>
+                <form action="api/forgot-password.php" method="post">
+                    <input class="text-user" type="text" name="username" placeholder="Username" required>
+                    <input class="text-email" type="email" name="email" placeholder="email" required>
+                    <button class="btn" type="submit">Submit</button>
+                </form>
+                    </div>
+    <script src="script.js"></script>
 </body>
 </html>

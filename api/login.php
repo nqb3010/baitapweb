@@ -1,9 +1,14 @@
 <?php
-$user = $_POST['user'];
-$pass = $_POST['pass'];
+$user = $_POST['username'];
+$pass = $_POST['password'];
 if($user == 'admin' && $pass == 'admin'){
     echo 'success';
+    // redirect to home page
+    header("Location: /home.html");
 }else{
-    echo 'error';
+    // alert message
+    echo "<script>alert('Invalid Username or Password')</script>";
+    header("Location: /login.html");
+
 }
 ?>
