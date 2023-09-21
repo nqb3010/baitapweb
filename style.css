@@ -17,8 +17,8 @@
     margin-top: 180px;
     background-color: #F0F8FF;
     border-radius: 15px;
-    /* box-shadow: 0px 0px 100px 0px #1E90FF; */
-    border: 1px solid #1E90FF;
+    /* box-shadow: 0px 0px 100px 0px #000; */
+    border: 1px solid #000;
 }
 
 .btn{
@@ -27,7 +27,7 @@
     height: 40px;
     margin-top: 10px;
     border-radius: 15px;
-    background-color: #1E90FF;
+    background-color: #000;
     color: white;
     font-weight: bold;
     
@@ -57,13 +57,13 @@
     text-align: center;
     font-weight: bold;
     font-size: 20px;
-    color: #1E90FF;
+    color: #000;
 }
 .text-h1{
     text-align: center;
     font-weight: bold;
     font-size: 30px;
-    color: #1E90FF;
+    color: #000;
 
 }
 @media screen and (max-width: 600px) {
@@ -75,8 +75,8 @@
         margin-left: 30px;
         background-color: #F0F8FF;
         border-radius: 15px;
-        /* box-shadow: 0px 0px 100px 0px #1E90FF; */
-        border: 1px solid #1E90FF;
+        /* box-shadow: 0px 0px 100px 0px #000; */
+        border: 1px solid #000;
     }
     .text-user{
         width: 250px;
@@ -103,13 +103,13 @@
         text-align: center;
         font-weight: bold;
         font-size: 20px;
-        color: #1E90FF;
+        color: #000;
     }
     .text-h1{
         text-align: center;
         font-weight: bold;
         font-size: 30px;
-        color: #1E90FF;
+        color: #000;
     
     }
     .btn{
@@ -118,7 +118,7 @@
         height: 40px;
         margin-top: 10px;
         border-radius: 15px;
-        background-color: #1E90FF;
+        background-color: #000;
         color: white;
         font-weight: bold;
         
@@ -140,7 +140,7 @@
     top: -10px;
     left: 288px;
     text-decoration: none;
-    color: #1E90FF;
+    color: #000;
     font-weight: bold;
     }
     .a-forgot-password{
@@ -148,7 +148,7 @@
         top: -10px;
         left: -30px;
         text-decoration: none;
-        color: #1E90FF;
+        color: #000;
         font-weight: bold;
     }
     .p-register{
@@ -161,7 +161,7 @@
         position: relative;
         top: -5px;
         left: 15px;
-        color: #1E90FF;
+        color: #000;
         font-weight: bold;
     }
     .checkbox{
@@ -179,7 +179,7 @@
             top: -10px;
             left: 200px;
             text-decoration: none;
-            color: #1E90FF;
+            color: #000;
             font-weight: bold;
             font-size: 12px;
         }
@@ -188,7 +188,7 @@
             top: -10px;
             left: -30px;
             text-decoration: none;
-            color: #1E90FF;
+            color: #000;
             font-weight: bold;
             font-size: 12px;
         }
@@ -219,7 +219,7 @@
         top: -10px;
         transform: translateX(-50%);
         text-decoration: none;
-        color: #1E90FF;
+        color: #000;
         font-weight: bold;;
     }
     .p-login{
@@ -227,7 +227,7 @@
         left: 460px;
         transform: translateX(-50%);
         text-decoration: none;
-        /* color: #1E90FF;
+        /* color: #000;
         font-weight: bold;
         font-size: 20px; */
     }
@@ -239,7 +239,7 @@
             top: -10px;
             transform: translateX(-50%);
             text-decoration: none;
-            color: #1E90FF;
+            color: #000;
             font-weight: bold;
            
         }
@@ -250,8 +250,18 @@
             font-size: 12px;
         }
     }
-    
-
+.close-form{
+    margin-left: 365px;
+    margin-top: 4px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+}
+#forgot-form{
+    height: 340px;
+}
 
 
 
